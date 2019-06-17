@@ -7,7 +7,6 @@ def primes(n):
     for num in range(3, n, 2):
         if all(num % i != 0 for i in range(2, int(math.sqrt(num))+1)):
             primes.append(num)
-    print(primes)
     return primes
 
 
