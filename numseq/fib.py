@@ -1,8 +1,5 @@
-def add(a, b):
-    return a + b
-
-
 def fib(x):
+    '''return the xth number in the fibonacci sequence'''
     a = 0
     b = 1
     fin = 0
@@ -15,7 +12,7 @@ def fib(x):
         fin = 1
     else:
         for i in range(2, x):
-            fin = add(a, b)
+            fin = a + b
             a = b
             b = fin
     return fin
