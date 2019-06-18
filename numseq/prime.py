@@ -1,7 +1,6 @@
 import math
+
 # ref: https://stackoverflow.com/questions/11619942/print-series-of-prime-numbers-in-python
-
-
 def primes(n):
     '''return prime numbers up to n'''
     primes = [2]
