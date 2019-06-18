@@ -3,6 +3,7 @@ import math
 
 
 def primes(n):
+    '''return prime numbers up to n'''
     primes = [2]
     for num in range(3, n, 2):
         if all(num % i != 0 for i in range(2, int(math.sqrt(num))+1)):
@@ -11,6 +12,7 @@ def primes(n):
 
 
 def is_prime(m):
+    '''determines if m is prime'''
     if m in primes(m+1):
         return True
     else:
